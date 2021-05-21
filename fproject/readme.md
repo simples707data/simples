@@ -68,14 +68,13 @@ One challenge will be to define what success is. If we are to make useful recomm
 
 Ran a basic sentiment analysis that with a spot check seemed to accurately grade the varies in positivity of language used. This could be very useful for analysing other chat groups, but was not that relevant for this example. The group conversation was almost entirely free of negative comments, so even those with the lowest polarity rating were really fairly neutral comments (only went as negative as -0.2 on a scale that stretches to negative 0.5). The sentiment ranking was for this reason in three categories that were not negative: Positive, Neutral, Less Positive.
 
-<img src=\"Sentiment.png\" width=\"600\" height=\"\">"
-
+<img src="https://github.com/simples707data/simples/blob/master/fproject/Sentiment.PNG">
 
 ## User anaylsis
 
 Easy to score users for participation, contribution and response rate. Such an analysis might be considered a bit intrusive, but is potentially very useful for individual users who wish to see how much they contribute and how visible they are within a online community like this. It could also be used by administrators to track whether individuals were taking part, if they were contributing or if they were dominating. Here we can see the number of total messages sent per user, the average sentiment rating for those users and a calcuation of whether they were a net giver or taker based on whether they asked more questions or replied to more threads.
 
-<img src=\"Usersbynoofmessages.png\" width=\"600\" height=\"\">
+<img src="https://github.com/simples707data/simples/blob/master/fproject/Usersbynoofmessages.PNG">
 
 ## Topic analysis
 
@@ -93,17 +92,19 @@ The best indicators of topic are given by analysis of questions, brand meantions
 
 Url stems are a good proxy for brand mentions. Few entities get a mention without being linked to in thie kind of environment.
 
-<img src=\"LinkStems.png\" width=\"600\" height=\"\">
+<img src="https://github.com/simples707data/simples/blob/master/fproject/LinkStems.PNG">
 
 ## Repetitions of phrasal-nouns
 
 As part of the topic analysis I ran the texts through N-gram functions and noun-phrase extractors. These provided some information about topic, but were most useful for generating lists of repeated issues. Here is some useful information for channel admins, who can see the frequency with which a topic is repeated. This might prompt them to open a new channel on the topic or to provide the information in a different format. A good example in this chat is the number of times that calls to complete the student survey were made. Admins might consider automating this weekly call to action. Here is a list of repeated topics:
 
+<img src="https://github.com/simples707data/simples/blob/master/fproject/RepeatedNouns.PNG">
+
 ## The shape of the conversation
 
 The model does allow for some analysis of the shape of even if not the exact content of the conversation. We can see how spread-out user participation was: whether it was dominated by a few individuals or widely used by all. We can see if there were individuals who had low participation rates. We can also see what kind of initial message prompted most of a reaction and of course we can track the sentiment of a conversation (Although not so relevant in an harmonious group, this could be a very important issue in another context). Here we see some other useful indicators in use of emojis and the percentage of messages that are questions. More such measures would be possible if needed. For example, counting 'ha's for houmour or 'thanks' for gratitude.
 
-<img src=\"Theshapeofchat.png\" width=\"600\" height=\"\">
+<img src="https://github.com/simples707data/simples/blob/master/fproject/Theshapeofchat.PNG">
 
 ## Conclusion
 
